@@ -1,6 +1,6 @@
 from __future__ import annotations
 from typing import Callable, Dict
-from .utils import PriorityQueue, reconstruct_path, Graph
+from utils import PriorityQueue, reconstruct_path, Graph
 
 def a_star_search(graph: Graph, start: str, goal: str, h: Dict[str, float] | Callable[[str], float]):
     if isinstance(h, dict):

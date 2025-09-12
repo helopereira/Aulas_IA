@@ -1,7 +1,7 @@
-from .greedy import greedy_best_first_search
-from .a_star import a_star_search
-from .graphs import graph_ag
-from .heuristics import heuristic_ag
+from greedy import greedy_best_first_search
+from a_star import a_star_search
+from graphs import graph_ag
+from heuristics import heuristic_ag
 
 def run_ag():
     start, goal = 'A', 'G'

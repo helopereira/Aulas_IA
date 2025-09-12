@@ -1,6 +1,6 @@
 from __future__ import annotations
 from typing import Callable, Dict, Set
-from .utils import PriorityQueue, reconstruct_path, path_cost, Graph
+from utils import PriorityQueue, reconstruct_path, path_cost, Graph
 
 def greedy_best_first_search(graph: Graph, start: str, goal: str, h: Dict[str, float] | Callable[[str], float]):
     if isinstance(h, dict):
